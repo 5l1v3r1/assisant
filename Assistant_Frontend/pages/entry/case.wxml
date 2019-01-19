@@ -1,0 +1,26 @@
+<!--pages/entry/case.wxml-->
+<view class="container content">
+  <view class="section">
+    <view class="case_title"><text>第 {{case_id}} 期私董会案例</text></view>
+      <view>
+        <image src="{{avatar}}" mode="aspectFit" id="avatar"></image>
+        <text>{{nickname}} [案主]</text>
+      </view>
+      <view><text id="date">{{create_date}}</text></view>
+      <view class="content_area">
+        <view><text>{{context}}</text></view>
+        <view><text>{{question}}</text></view>
+      </view>
+      <view class="case_btn">
+        <block wx:if="{{!isOwner}}">
+          <button type="primary" bindtap="submit_answer"> 我要拆解 </button>
+        </block>
+        <block wx:else>
+          <button type="primary" disabled> 我要拆解 </button>
+        </block>
+      </view>
+      <view class="case_btn">
+        <button type="primary" bindtap="view_answers"> 已有拆解 </button>
+      </view>
+  </view>
+</view>

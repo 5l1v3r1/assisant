@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/entry/entry",
+    "pages/about/about",
+    "pages/publish/publish",
+    "pages/entry/case",
+    "pages/entry/reply",
+    "pages/entry/reply_list",
+    "pages/about/help"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F7F7FA",
+    "navigationBarTitleText": "52私董会小助手",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_focus.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/help.png",
+        "selectedIconPath": "images/help_focus.png",
+        "pagePath": "pages/about/help",
+        "text": "帮助"
+      },
+      {
+        "iconPath": "images/about.png",
+        "selectedIconPath": "images/about_focus.png",
+        "pagePath": "pages/about/about",
+        "text": "关于"
+      }
+    ]
+  }
+}

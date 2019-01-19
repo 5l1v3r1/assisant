@@ -1,0 +1,46 @@
+/* pages/entry/entry.wxss */
+.issue {
+  font-size: 16px;
+  padding: 0;
+  padding-bottom: 120rpx;
+}
+
+.head {
+  background-color: #F7F7FA;
+  font-weight: bold;
+}
+
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 80rpx;
+  align-items: center;
+}
+
+.th {
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+
+.td {
+    justify-content: center;
+    text-align: center;
+}
+
+#avatar {
+  width: 40rpx;
+  height: 40rpx;
+  overflow: hidden;
+  border-radius: 10%;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+
+#filter_btn {
+  position: fixed;
+	bottom: 0;
+	width: 100%;
+}

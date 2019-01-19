@@ -1,0 +1,27 @@
+<!--entry.wxml-->
+<view class="container issue">
+  <view class="tr head">
+    <view class="th" style="width:20%;">期数</view>
+    <view class="th" style="width:35%;">日期</view>
+    <view class="th" style="width:45%;">案主</view>
+  </view>
+  <block wx:for="{{listData}}">
+  <view class="tr">
+    <view class="td"  style="width:20%;">{{item.id}}</view>
+    <view class="td"  style="width:35%;">
+      <navigator url="case?id={{item.id}}" hover-class="navigator-hover">
+        <button type="primary" size="mini" style="width:90%;">{{item.create_date}}</button>
+      </navigator>
+    </view>
+    <view class="td"  style="width:45%;">
+      <image src="{{item.avatar}}" mode="aspectFit" id="avatar"></image>
+      <text>{{item.nickname}}</text>
+    </view>
+  </view>
+  </block>
+</view>
+<view>
+  <picker mode="date" value="{{date}}" start="2018-05-02" end="2049-10-01" bindchange="bindDateChange">
+    <button type="primary" id="filter_btn">筛选日期</button>
+  </picker>
+</view>

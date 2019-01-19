@@ -1,0 +1,18 @@
+<!--pages/about/about.wxml-->
+<view class='container about'>
+  <view class='title'>
+    <text>关于助手</text>
+  </view>
+  <view class='content'>
+    <text>52私董会小助手是刘润进化岛52私董会的助手工具，用于分享私董会成员每周提出的商业问题，以及方便私董会成员进行问题拆解，提出问题的成员（即答主）可根据每位成员的拆解评选优秀的回答。</text>
+  </view>
+  <view class='title'>
+    <text>关于作者</text>
+  </view>
+  <view class='content'>
+    <text>作者是52私董会的成员，也是一枚好安全、好开发、好产品、好管理的四好青年。小程序的维护和功能的健全离不开大家的支持，可以点击、扫描下面的二维码支持他。</text>
+  </view>
+  <view class='qr_img'>
+    <image src='{{qr_code}}' data_src='{{qr_code}}' mode='{{img_mode}}' bindtap='load_qr'></image>
+  </view>
+</view>

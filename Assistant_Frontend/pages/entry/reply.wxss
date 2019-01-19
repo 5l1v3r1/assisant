@@ -1,0 +1,20 @@
+/* pages/entry/reply.wxss */
+.case {
+  padding: 20rpx 0;
+}
+
+.section {
+  font-size: 16px;
+  border: 1px solid;
+  border-color: grey;
+  background-color: #F7F7FA;
+}
+
+.sumbit_btn {
+  margin: 20rpx auto;
+}
+
+#reply_area {
+  width: 600rpx;
+  height: 1000rpx;
+}

@@ -1,0 +1,27 @@
+<!--pages/entry/reply_list.wxml-->
+<view class="container content">
+  <view wx:if="{{reply_list==''}}" id="null_tip">此地空空如也</view>
+  <view class="section" wx:for="{{reply_list}}" wx:key="rid">
+    <view>
+        <image src="{{item.avatar}}" mode="aspectFit" id="avatar"></image>
+        <text>{{item.nickname}}</text>
+        <text wx:if="{{item.is_best == 1}}" id="best_answser">优秀拆解</text>
+    </view>
+    <view><text id="date">{{item.create_date}}</text></view>
+    <view class="content_area">
+      <view><text>{{item.reply}}</text></view>
+    </view>
+    <view id="operation">
+      <button size="mini" bindtap="vote_reply" data-rid="{{item.rid}}">
+        <image src="/images/un_praise.png" id="avatar"></image>
+        <text> {{item.vote}} </text>
+      </button>
+      <button wx:if="{{isOwner && item.is_best == 0}}" size="mini" type="warn" id="owner" bindtap="set_best" data-rid="{{item.rid}}"> 选为最佳 </button>
+    </view>
+  </view>
+</view>
+<view class="footer">
+  <picker value="{{index}}" range="{{option_array}}" bindchange="bindPickerChange">
+    <button type="primary" id="filter_btn">筛选拆解</button>
+  </picker>
+</view>

@@ -1,0 +1,27 @@
+/* pages/about/about.wxss */
+.about {
+  padding: 50rpx 0;
+}
+
+auto.title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 20rpx auto;
+}
+
+.content {
+  font-size: 16px;
+  margin: 15rpx 50rpx;
+  text-indent: 60rpx;
+  line-height: 55rpx;
+}
+
+.qr_img {
+  align-items: center;
+  margin: auto;
+}
+
+image {
+  width: 240px;
+  height: 180px;
+}

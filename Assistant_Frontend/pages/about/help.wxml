@@ -1,0 +1,19 @@
+<!--pages/about/help.wxml-->
+<view class='egg' wx:if="{{showEgg}}">
+  <image src="{{egg}}" mode='{{img_mode}}' id='egg'></image>
+</view>
+<view wx:if="{{showRules}}" class='container about'>
+  <view class='title'>
+    <text>52私董会规则</text>
+  </view>
+  <view class='content'>
+    <text>
+    1、每周一个案例拆解，一年52周52个案例，用大家的思维力降低案主的决策风险并提升案主的思考宽度；
+    2、目前聚焦于商业运营管理的相关问题；
+    3、每周日至周一确定新的拆解案例及案主，周二晚上公布新的案例，周三至周日进行案例拆解；
+    4、案主的案例分为背景描述和问题说明两个部分，案主仅可以在周二发布案例；
+    5、私董会成员每人每个月提交不少于2次拆解，每个拆解要立意表达清楚，字数不少于300字；
+    6、每期案主于第二周周二21点【答谢会】答谢优秀拆解童鞋，答谢方式不限制；
+    </text>
+  </view>
+</view>

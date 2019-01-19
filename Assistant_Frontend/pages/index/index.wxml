@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登录 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text>欢迎访问52私董会小助手</text>
+  </view>
+  <view class="btn_frame">
+    <view class='loginbtn'>
+      <block wx:if="{{hasUserInfo && isTime}}">
+        <button type="primary" bindtap="publish"> 发布案例 </button>
+      </block>
+      <block wx:else>
+        <button disabled type="primary"> 发布案例 </button>
+      </block>
+    </view>
+    <view class='loginbtn'>
+      <block wx:if="{{hasUserInfo}}">
+        <button type="primary" bindtap="entry"> 往期案例 </button>
+      </block>
+      <block wx:else>
+        <button disabled type="primary"> 往期案例 </button>
+      </block>
+    </view>
+  </view>
+  <view class="tip">
+    <text>* 仅每周二可发布案例</text>
+  </view>
+</view>

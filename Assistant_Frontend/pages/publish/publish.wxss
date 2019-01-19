@@ -1,0 +1,31 @@
+/* pages/publish/publish.wxss */
+.case {
+  padding: 0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 20rpx auto;
+}
+
+.section {
+  font-size: 16px;
+  border: 1px solid;
+  border-color: grey;
+  background-color: #F7F7FA;
+}
+
+.sumbit_btn {
+  margin: 30rpx auto;
+}
+
+#context_area {
+  width: 600rpx;
+  height: 500rpx;
+}
+
+#question_area {
+  width: 600rpx;
+  height: 300rpx;
+}

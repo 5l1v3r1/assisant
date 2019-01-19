@@ -1,0 +1,20 @@
+<!--pages/publish/publish.wxml-->
+<view class="container case">
+  <form bindsubmit="formSubmit">
+    <view class="title">
+      <text>案例背景</text>
+    </view>
+    <view class="section">
+      <textarea id="context_area" maxlength="{{context_word}}" placeholder="限制{{context_word}}字" focus="true" name="context" />
+    </view>
+    <view class="title">
+      <text>问题描述</text>
+    </view>
+    <view class="section">
+      <textarea id="question_area" maxlength="{{question_word}}"  placeholder="限制{{question_word}}字" name="question" />
+    </view>
+    <view class="sumbit_btn">
+      <button type="primary" form-type="submit"> 提交 </button>
+    </view>
+  </form>
+</view>

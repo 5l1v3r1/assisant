@@ -1,0 +1,42 @@
+/* pages/entry/case.wxss */
+.content {
+  font-size: 16px;
+  padding: 15rpx 50rpx;
+  line-height: 55rpx;
+  align-content: center;
+}
+
+.section {
+  width:100%;
+}
+
+.case_title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#avatar {
+  width: 40rpx;
+  height: 40rpx;
+  overflow: hidden;
+  border-radius: 10%;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+
+#date {
+  font-size: 14px;
+  color: grey;
+}
+
+.content_area {
+  text-indent: 60rpx;
+  background-color: #F7F7FA;
+  border: 1rpx solid;
+  border-color: grey;
+}
+
+.case_btn {
+  margin: 20rpx 0;
+}

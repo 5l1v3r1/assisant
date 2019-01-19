@@ -1,0 +1,13 @@
+<!--pages/entry/reply.wxml-->
+<view class="container case">
+  <form bindsubmit="formSubmit">
+    <view class="section">
+      <textarea hidden name="case_id" value="{{case_id}}"></textarea>
+      <textarea id="reply_area" maxlength="{{reply_word}}" placeholder="限制{{reply_word}}字" name="reply" wx:if="{{reply_content}}" auto-height auto-focus='true' value="{{reply_content}}"></textarea>
+      <textarea id="reply_area" maxlength="{{reply_word}}" placeholder="限制{{reply_word}}字" name="reply" wx:else auto-focus='true' value="{{reply_content}}"></textarea>
+    </view>
+    <view class="sumbit_btn">
+      <button type="primary" form-type="submit"> 保存 </button>
+    </view>
+  </form>
+</view>
